@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --nuetral-Very-pale-blue: hsl(225, 100%, 98%);
+    --nuetral-Desaturated-blue: hsl(224, 23%, 55%);
+    --nuetral-Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+    width: 28.125rem;
+    background: white;
+    border-radius: 0.6125rem;
+}
+
+.hero-image  {
+    border-radius: 0.6125rem 0.6125rem 0 0;
+    width: 450px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--nuetral-Dark-blue);
+}
+
+.order-description {
+    line-height: 1.8rem;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    color: var(--nuetral-Desaturated-blue);
+}
+
+.plan-container {
+    font-size: 1rem;
+    background-color: var(--primary-pale-blue);
+    padding: 1.5rem;
+    border-radius: 0.8125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+  
+.plan-container a {
+    color: var(--primary-bright-blue);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+}
+  
+.plan-container a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+  
+.plan-description {
+    margin: 0 4.7rem 0 0.6125rem;
+    line-height: 1.25rem;
+}
+
+button {
+    width: 80%;
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: white;
+    color: var(--nuetral-Desaturated-blue);
+    border: none;
+    transition: 0.2s;
+    margin-top: 2rem;
+}
+  
+.cancel-button:hover {
+    color: black;
+}
+  
+.proceed-button {
+    background-color: var(--primary-bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(200, 192, 243);
+    margin-top: 1.25rem;
+    transition: 0.2s;
+}
+  
+.proceed-button:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 375px;
+    }
+
+    .hero-image {
+        width: 375px;
+    }
+}
