@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Continued development
 
-Want to integrate this card design in a future project and learn wys to prevent repetition of sme line of code in multiple places.
+Want to integrate this card design in a future project and learn ways to prevent repetition of same line of code in multiple places.
 
 ### Useful resources
 
